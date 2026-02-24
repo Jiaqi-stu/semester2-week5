@@ -15,7 +15,16 @@
 #include <stdio.h>
 
 int main(void) {
+    int num;
+    printf("Enter a number:");
+    scanf("%d", &num);
 
+    if(num % 3 == 0 && num % 5 == 0){
+        printf("The numberis divisible by 3 and 5");
+    } else {
+        printf("The number is not divisible by 3 and 5");
+    }
+    
 	// complete your code here
 
 	return 0;
