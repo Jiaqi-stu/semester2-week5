@@ -10,8 +10,15 @@ int main(void){
  */
      char password[50];
 	 
+     printf("Enter the password: ");
+     scanf("%s", password);
 	 // compare using strcmp(str1,str2) from week 4
+     while(strcmp(password, "secure123") != 0){
+        printf("Worro password! Try again: ");
+        scanf("%s", password);
+     }
 	 // complete the rest of the code here
-	
+	printf("access\n");
+
     return 0;
 }
